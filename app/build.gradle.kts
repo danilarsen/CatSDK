@@ -44,6 +44,16 @@ android {
 
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.example.catsdk"
+            artifactId = "catordog"
+            version = "1.0.0"
+        }
+    }
+}
+
 dependencies {
 
     implementation(project(":catordog"))
