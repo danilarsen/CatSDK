@@ -6,7 +6,6 @@ import android.util.Log
 import com.danilarsen.catordog.ml.Model
 import com.danilarsen.catordog.model.ClassifierResult
 import org.tensorflow.lite.DataType
-import org.tensorflow.lite.support.common.ops.NormalizeOp
 import org.tensorflow.lite.support.image.ImageProcessor
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.image.ops.ResizeOp

@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">CatSDK</string>
-    <string name="take_photo">Image Capture</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="classified_as">Classified as:</string>
+    <string name="app_name" translatable="false">CatSDK</string>
+    <string name="classified_as" translatable="false">Classified as:</string>
+    <string name="take_picture" translatable="false">Take Picture</string>
 </resources>
