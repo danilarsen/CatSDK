@@ -1,6 +1,7 @@
 package com.example.catsdk.view.fragments
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.ActivityNotFoundException
@@ -19,10 +20,9 @@ import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.danilarsen.catordog.model.ClassifierResult
 import com.danilarsen.catordog.ImageClassifier
+import com.danilarsen.catordog.model.ClassifierResult
 import com.example.catsdk.databinding.FragmentCameraBinding
-
 
 class CameraFragment : Fragment() {
 
@@ -84,6 +84,7 @@ class CameraFragment : Fragment() {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun updateUIWithClassification(classificationResult: ClassifierResult) {
         // Make sure you update the UI in the main thread
         Log.i(TAG, "${classificationResult.label} - ${classificationResult.confidence}")

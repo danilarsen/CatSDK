@@ -54,6 +54,7 @@ class ImageClassifier(context: Context) {
         // Retrieve the output of the model
         val outputFeature0 = outputs.outputFeature0AsTensorBuffer.floatArray
 
+        model.close()
         Log.d(TAG, "Output tensor: ${outputFeature0.joinToString(", ")}")
 
         // Interpret the result of the model
