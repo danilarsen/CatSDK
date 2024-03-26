@@ -24,7 +24,6 @@ class ImageClassifier(context: Context) {
     // Processor for pre-processing the image data
     private val imageProcessor: ImageProcessor = ImageProcessor.Builder()
         .add(ResizeOp(224, 224, ResizeOp.ResizeMethod.BILINEAR)) // Resize the image to 224x224 pixels
-        .add(NormalizeOp(0f, 255f)) // Normalize the image pixel values
         .build()
 
     // List of labels for the model's outputs, loaded from a file
