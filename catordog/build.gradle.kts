@@ -39,16 +39,6 @@ android {
 
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.github.danilarsen"
-            artifactId = "CatSDK"
-            version = "1.0.0"
-        }
-    }
-}
-
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
